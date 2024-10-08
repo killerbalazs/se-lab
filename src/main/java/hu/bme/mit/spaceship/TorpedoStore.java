@@ -27,7 +27,9 @@ public class TorpedoStore {
       }
     }
   }
+  //Random generate
   private Random generator = new Random();
+  
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
       throw new IllegalArgumentException("numberOfTorpedos");
@@ -50,7 +52,7 @@ public class TorpedoStore {
 
     return success;
   }
-
+  
   public boolean isEmpty(){
     return this.torpedoCount <= 0;
   }
